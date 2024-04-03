@@ -1,0 +1,25 @@
+{
+  "results": {
+    "arc_challenge_nb": {
+      "acc": 0.19027303754266212,
+      "acc_stderr": 0.011470424179225712,
+      "acc_norm": 0.23464163822525597,
+      "acc_norm_stderr": 0.012383873560768671
+    }
+  },
+  "versions": {
+    "arc_challenge_nb": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=TurkuNLP/gpt3-finnish-13B,use_accelerate=True,tokenizer=TurkuNLP/gpt3-finnish-13B,dtype=bfloat16,trust_remote_code=False",
+    "num_fewshot": 25,
+    "batch_size": null,
+    "batch_sizes": [],
+    "device": "cuda:0",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

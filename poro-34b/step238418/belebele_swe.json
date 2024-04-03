@@ -1,0 +1,72 @@
+{
+  "results": {
+    "belebele_swe_Latn": {
+      "acc,none": 0.45666666666666667,
+      "acc_stderr,none": 0.016613188209796736,
+      "acc_norm,none": 0.45666666666666667,
+      "acc_norm_stderr,none": 0.016613188209796736,
+      "alias": "belebele_swe_Latn"
+    }
+  },
+  "configs": {
+    "belebele_swe_Latn": {
+      "task": "belebele_swe_Latn",
+      "group": "belebele",
+      "dataset_path": "facebook/belebele",
+      "test_split": "swe_Latn",
+      "fewshot_split": "swe_Latn",
+      "doc_to_text": "P: {{flores_passage}}\nQ: {{question.strip()}}\nA: {{mc_answer1}}\nB: {{mc_answer2}}\nC: {{mc_answer3}}\nD: {{mc_answer4}}\nAnswer：",
+      "doc_to_target": "{{['1', '2', '3', '4'].index(correct_answer_num)}}",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 5,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": true,
+      "doc_to_decontamination_query": "{{question}}",
+      "metadata": {
+        "version": 0.0
+      }
+    }
+  },
+  "versions": {
+    "belebele_swe_Latn": 0.0
+  },
+  "n-shot": {
+    "belebele_swe_Latn": 5
+  },
+  "config": {
+    "model": "hf",
+    "model_args": "pretrained=/scratch/project_462000319/general-tools/checkpoints/33B_torch_step238418_bfloat16,parallelize=True,tokenizer=/scratch/project_462000319/general-tools/checkpoints/33B_torch_step238418_bfloat16,dtype=bfloat16,trust_remote_code=False,max_memory_per_gpu=60GB",
+    "batch_size": 1,
+    "batch_sizes": [],
+    "device": null,
+    "use_cache": null,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "gen_kwargs": null
+  },
+  "git_hash": "5b0b8a56"
+}

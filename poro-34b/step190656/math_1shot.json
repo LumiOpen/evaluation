@@ -1,0 +1,53 @@
+{
+  "results": {
+    "math_algebra": {
+      "acc": 0.0008424599831508003,
+      "acc_stderr": 0.0008424599831507952
+    },
+    "math_counting_and_prob": {
+      "acc": 0.0,
+      "acc_stderr": 0.0
+    },
+    "math_geometry": {
+      "acc": 0.0020876826722338203,
+      "acc_stderr": 0.002087682672233829
+    },
+    "math_intermediate_algebra": {
+      "acc": 0.0,
+      "acc_stderr": 0.0
+    },
+    "math_num_theory": {
+      "acc": 0.0,
+      "acc_stderr": 0.0
+    },
+    "math_prealgebra": {
+      "acc": 0.001148105625717566,
+      "acc_stderr": 0.001148105625717566
+    },
+    "math_precalc": {
+      "acc": 0.0,
+      "acc_stderr": 0.0
+    }
+  },
+  "versions": {
+    "math_algebra": 1,
+    "math_counting_and_prob": 1,
+    "math_geometry": 1,
+    "math_intermediate_algebra": 1,
+    "math_num_theory": 1,
+    "math_prealgebra": 1,
+    "math_precalc": 1
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=/scratch/project_462000319/general-tools/checkpoints/33B_torch_step190656_bfloat16,use_accelerate=True,tokenizer=/scratch/project_462000319/general-tools/checkpoints/33B_torch_step190656_bfloat16,dtype=bfloat16,trust_remote_code=False",
+    "num_fewshot": 1,
+    "batch_size": null,
+    "batch_sizes": [],
+    "device": "cuda:0",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

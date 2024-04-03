@@ -1,0 +1,29 @@
+{
+  "results": {
+    "squad2": {
+      "exact": 2.4509391055335636,
+      "f1": 6.680987251044322,
+      "HasAns_exact": 4.622132253711201,
+      "HasAns_f1": 13.09435924960346,
+      "NoAns_exact": 0.28595458368376786,
+      "NoAns_f1": 0.28595458368376786,
+      "best_exact": 50.07159100480081,
+      "best_f1": 50.07359027825634
+    }
+  },
+  "versions": {
+    "squad2": 1
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=TurkuNLP/gpt3-finnish-13B,use_accelerate=True,tokenizer=TurkuNLP/gpt3-finnish-13B,dtype=bfloat16,trust_remote_code=False",
+    "num_fewshot": 0,
+    "batch_size": null,
+    "batch_sizes": [],
+    "device": "cuda:0",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

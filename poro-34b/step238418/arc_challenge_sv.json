@@ -1,0 +1,25 @@
+{
+  "results": {
+    "arc_challenge_sv": {
+      "acc": 0.3122866894197952,
+      "acc_stderr": 0.013542598541688065,
+      "acc_norm": 0.36860068259385664,
+      "acc_norm_stderr": 0.014097810678042184
+    }
+  },
+  "versions": {
+    "arc_challenge_sv": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=/scratch/project_462000319/general-tools/checkpoints/33B_torch_step238418_bfloat16,use_accelerate=True,tokenizer=/scratch/project_462000319/general-tools/checkpoints/33B_torch_step238418_bfloat16,dtype=bfloat16,trust_remote_code=False",
+    "num_fewshot": 25,
+    "batch_size": null,
+    "batch_sizes": [],
+    "device": "cuda:0",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

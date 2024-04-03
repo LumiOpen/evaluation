@@ -1,0 +1,43 @@
+{
+  "mbpp": {
+    "pass@1": 0.098,
+    "pass@10": 0.214
+  },
+  "config": {
+    "prefix": "",
+    "do_sample": true,
+    "temperature": 0.2,
+    "top_k": 0,
+    "top_p": 0.95,
+    "n_samples": 10,
+    "eos": "<|endoftext|>",
+    "seed": 0,
+    "model": "/scratch/project_462000319/general-tools/checkpoints/33B_torch_step25632_bfloat16/",
+    "modeltype": "causal",
+    "peft_model": null,
+    "revision": null,
+    "use_auth_token": false,
+    "trust_remote_code": false,
+    "tasks": "mbpp",
+    "instruction_tokens": null,
+    "batch_size": 1,
+    "max_length_generation": 2048,
+    "precision": "bf16",
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "limit": null,
+    "limit_start": 0,
+    "postprocess": true,
+    "allow_code_execution": true,
+    "generation_only": false,
+    "load_generations_path": null,
+    "load_data_path": null,
+    "metric_output_path": "/pfs/lustrep4/scratch/project_462000319/jburdge/git/evals/output/poro-34b/step25632/mbpp_pass@10.json",
+    "save_generations": false,
+    "save_generations_path": "generations.json",
+    "save_references": false,
+    "prompt": "prompt",
+    "max_memory_per_gpu": "auto",
+    "check_references": false
+  }
+}

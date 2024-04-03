@@ -1,0 +1,25 @@
+{
+  "results": {
+    "drop": {
+      "em": 0.0006291946308724832,
+      "em_stderr": 0.000256800274972394,
+      "f1": 0.04307781040268468,
+      "f1_stderr": 0.0009743470406895022
+    }
+  },
+  "versions": {
+    "drop": 1
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=/scratch/project_462000319/general-tools/checkpoints/33B_torch_step95328_bfloat16,use_accelerate=True,tokenizer=/scratch/project_462000319/general-tools/checkpoints/33B_torch_step95328_bfloat16,dtype=bfloat16,trust_remote_code=False",
+    "num_fewshot": 3,
+    "batch_size": null,
+    "batch_sizes": [],
+    "device": "cuda:0",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

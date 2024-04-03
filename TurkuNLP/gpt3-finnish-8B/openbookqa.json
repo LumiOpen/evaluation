@@ -1,0 +1,25 @@
+{
+  "results": {
+    "openbookqa": {
+      "acc": 0.15,
+      "acc_stderr": 0.015984712135164926,
+      "acc_norm": 0.258,
+      "acc_norm_stderr": 0.01958671178521584
+    }
+  },
+  "versions": {
+    "openbookqa": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=TurkuNLP/gpt3-finnish-8B,use_accelerate=True,tokenizer=TurkuNLP/gpt3-finnish-8B,dtype=bfloat16,trust_remote_code=False",
+    "num_fewshot": 0,
+    "batch_size": null,
+    "batch_sizes": [],
+    "device": "cuda:0",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}
